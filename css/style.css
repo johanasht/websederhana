@@ -1,0 +1,144 @@
+* {
+  text-decoration: none;
+}
+body {
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem auto;
+  background-color: rgb(255, 195, 195);
+  font-family: "Poppins";
+  height: 2000px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid rgb(255, 255, 255);
+  background-color: rgb(138, 3, 3);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+nav .navbar {
+  margin: 1rem;
+}
+nav .navbar a {
+  color: azure;
+  font-weight: 700;
+}
+nav .navbar-nav {
+  margin: 1rem;
+}
+nav .navbar-nav a {
+  color: azure;
+  font-weight: 700;
+  margin: 0 1rem;
+}
+#daftar,
+#detail,
+#ubah,
+#tambah {
+  padding-top: 5rem;
+}
+#daftar h2,
+#detail h2,
+#ubah h2,
+#tambah h2 {
+  text-align: center;
+}
+#daftar .container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: start;
+}
+#daftar .container button,
+#detail .container button,
+#ubah form button,
+#tambah form button {
+  margin: 1rem;
+  padding: 0.5rem;
+  font-size: 15px;
+  background-color: #b84300;
+  border-radius: 5px;
+  /* border: 1px solid #bb7e0d; */
+  cursor: pointer;
+  color: #fff;
+  font-weight: 700;
+}
+#daftar .container .table {
+  display: grid;
+  grid-gap: 10px;
+  width: 100%;
+  border-top: 1px;
+}
+#daftar .container .table h2 {
+  text-align: center;
+}
+#daftar .container .table table {
+  border-collapse: collapse;
+  text-align: center;
+}
+table,
+th,
+td {
+  border: 1px solid black;
+}
+.link {
+  margin: 0 0.3rem;
+  color: black;
+}
+
+/* Detail karyawan */
+
+#detail .container {
+  display: flex;
+  justify-content: center;
+}
+#daftar .container button a,
+#detail .container button a {
+  color: #fff;
+}
+#detail .container table {
+  text-align: left;
+  border-collapse: collapse;
+}
+#detail .container table tr th,
+#detail .container table tr td {
+  padding: 0.5rem 1rem;
+}
+
+/* Ubah Data Karyawan */
+#ubah form,
+#tambah form {
+  display: flex;
+  justify-content: center;
+}
+#ubah form .row,
+#tambah form .row {
+  border: 1px solid black;
+  padding: 2rem;
+}
+#ubah form .row .col,
+#tambah form .row .col {
+  display: flex;
+  justify-content: start;
+  flex-wrap: wrap;
+}
+#ubah form .row .mb-3,
+#tambah form .row .mb-3 {
+  margin: 0.5rem;
+}
+#ubah form .row .mb-3 input,
+#ubah form .row .mb-3 textarea,
+#ubah form .row .mb-3 select,
+#tambah form .row .mb-3 input,
+#tambah form .row .mb-3 textarea,
+#tambah form .row .mb-3 select {
+  display: flex;
+  font-family: "Poppins";
+  font-size: 15px;
+  min-width: 15rem;
+}
